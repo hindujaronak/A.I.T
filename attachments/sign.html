@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<style>
+	
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/* Set a style for all buttons */
+		input[type = submit] {
+	background-color: #ff1a1a;
+			color: aqua;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.container
+		{
+			max-width : 500px;
+			margin : auto;
+			border-style: solid;
+			border-width: 2px;
+			border-radius: 5px;
+			padding:2%;
+            font-family: Arial, Helvetica, sans-serif;
+			background-image:url('2222.jpg');
+            color:aquamarine;
+               
+            
+            
+		
+	
+	</style>
+</head>
+<body>
+	<div class= "container ">
+		<h2>Signup</h2>
+		<form>
+<label for="email">Name</label>
+    <input type="text" placeholder="Enter name" name="text" required>
+
+			<label>Username</label>
+
+			<input type = "text" placeholder = "Enter Username" id = "username" />
+			
+			    <label for="email">Email</label>
+    <input type="text" placeholder="Enter Email" name="email" required class="valider">
+
+			<label>Password</label>
+
+			<input type = "password" placeholder="Enter Password" id = "password" />
+			
+			<label for="psw-repeat" > Repeat Password </label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+			<input type = "submit" value = "Signup" />	
+			  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>    
+		</form>
+	</div>
+</body>
+</html>

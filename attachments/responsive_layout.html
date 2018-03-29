@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: 	#000000 ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: 	#C0C0C0;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.left {
+    text-shadow: 2px 2px 5px black;
+
+  background: linear-gradient( black , red,gold);
+  float:left;
+  width:30%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+ 
+  text:white;
+ 
+}
+h2 {
+    text-shadow: 4px 4px 4px black;
+	margin-top:5%;
+	text-transform: uppercase;
+	line-height: 20px;
+	font-weight: 600;
+	color: white;
+	
+  animation: move 2s;
+  -webkit-animation: move 2s;
+}
+.section-title.center {
+	padding: 10px 0;
+}
+.section-title h2, .section-title.center h3 {
+	margin-bottom: 10px;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}        
+	
+
+.main {
+  float:left;
+  width:40%;
+  padding:0px 20px;
+  margin-top:7px;
+  background: linear-gradient(to right, white,blue,lightblue);
+  text-align:center ;
+    
+  
+}
+.right {
+background: linear-gradient(to right, black , yellow , red);
+  float:left;
+  width:30%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+  text:white;
+ 
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .left, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div style="overflow:auto">
+  <div class="left">
+    <img src="gg.png">
+    <h2> GERMANY </h2>
+    <p> The World Cup holders are in good shape to defend their title after being unbeaten in all games in 2017.
+They have already collected a trophy in Russia in the build-up to the World Cup, winning the Confederations Cup in July and using the warm-up tournament to test new options like late developer Lars Stindl.
+World Cup qualifying was completed with 10 wins from 10 and a European-record 43 goals.Key player: Toni Kroos (Real Madrid) - Germany's new leader, Kroos keeps the side ticking from midfield, where his intelligence, precision and composition on the ball inspires teammates going forward. Thomas muller , lemar , marco rues etc are f
+</p>
+  </div>
+
+  <div class="main">
+    
+    <img src="ar.jpg">
+    <h2>ARGENTINA</h2>
+    <p>
+A team featuring Lionel Messi can never be ignored, even though the 2014 runner-up barely made it to this World Cup.
+But other key talent like Sergio Aguero and Gonzalo Iguain have been far from being in top form for Argentina. That is why little-known Boca Juniors striker Daria Benedetto has been deployed up front.
+Key player: Messi (Barcelona) - Doubted by fans, yet the five-time world player of the year delivered. Argentina would not be going to Russia without his goals and leadership. Turns 31 during a tournament that could yet crown his career.
+
+</p>
+  </div>
+
+  <div class="right">
+    <img src="be.jpg">
+    <h2>BELGIUM</h2>
+    <p>
+It's time to deliver for a team featuring such exceptional talent. But this is a country that is yet to break into the semifinals of a tournament.
+It is widely acknowledged they have been held back by mediocre management. Now it is up to Roberto Martinez, a Spanish coach, to get the best out of this plethora of stars.
+If you have Romelu Lukaku up front, Eden Hazard as a creative genius and goalkeeper Thibaut Courtois for a final lock on goal, the ingredients for success are there.
+There are issues in defense. Central defender Vincent Kompany is as brittle as he can be brilliant and there are very few credible backups available for the likes of Toby Alderweireld and Jan Vertonghen.
+
+</p>
+  </div>
+</div>
+
+<div style="background-color:#000000;text-align:center;padding:10px;margin-top:7px; text-transform: uppercase;">why are you here? scroll up </div>
+
+</body>
+</html>
